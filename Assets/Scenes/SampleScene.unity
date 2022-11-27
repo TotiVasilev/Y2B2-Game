@@ -6371,6 +6371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Small-Sparks_RateOverTime
       objectReference: {fileID: 0}
+    - target: {fileID: 8019633877795833347, guid: cd684bf5e14ff40bd9fde69f0ad12184,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd684bf5e14ff40bd9fde69f0ad12184, type: 3}
 --- !u!1 &1462230821
@@ -7787,6 +7792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParticleSystem_Fire_Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611989287507285732, guid: 8e349848f13f648df8b267f140fafdc7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e349848f13f648df8b267f140fafdc7, type: 3}
