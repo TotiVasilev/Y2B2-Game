@@ -52,7 +52,7 @@ Material:
     - _QueueOffset: 0
     - _SrcBlend: 5
     - _Surface: 1
-    - _VigneteIntensity: 0.964
+    - _VigneteIntensity: 1
     - _VigneteIntensityPower: 5
     - _VoronoiPower: 1
     - _VoronoiScale: 5
