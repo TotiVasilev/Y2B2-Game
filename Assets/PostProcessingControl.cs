@@ -7,20 +7,38 @@ using UnityEngine.Rendering.Universal;
 public class PostProcessingControl : MonoBehaviour
 {
     public Volume inSmoke;
-    // Start is called before the first frame update
+    public VolumeProfile[] profiles;
+
+    //WhiteBalance whiteBalance;
+
+
+
+    public bool ison = false;
     void Start()
     {
-        WhiteBalance whiteBalance;
-
-        if (inSmoke.profile.TryGet<WhiteBalance>(out whiteBalance))
-        {
-            whiteBalance.temperature.value = 0;
-        }
+        //inSmoke.profile.TryGet<WhiteBalance>(out whiteBalance);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+           TurnOnVision();
+        }   
+    }
+
+    void TurnOnVision()
+    {
+        if (ison == false)
+        {
+            inSmoke.profile = profiles[1];
+            ison = true;
+        }
+        else
+           if (ison == true)
+        {
+            ison = false;
+            inSmoke.profile = profiles[0    ];
+        }
     }
 }

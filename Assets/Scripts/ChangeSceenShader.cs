@@ -12,7 +12,7 @@ public class ChangeSceenShader : MonoBehaviour
       // Start is called before the first frame update */
     void Start()
     {
-        material.SetFloat("_FullscreenIntensity", 0.7f);
+        material.SetFloat("_FullscreenIntensity", 0.4f);
     }
     void OnApplicationQuit()
     {

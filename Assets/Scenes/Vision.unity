@@ -875,7 +875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840815014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 1.36, z: -3.65}
+  m_LocalPosition: {x: -0.74, y: 1.36, z: -3.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1198,7 +1198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698236998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: 0.57, z: 4.287337}
+  m_LocalPosition: {x: -0.71, y: 0.47, z: 4.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1218,3 +1218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inSmoke: {fileID: 1587534592}
+  profiles:
+  - {fileID: 11400000, guid: 7110954086f569843a262ebb87534b88, type: 2}
+  - {fileID: 11400000, guid: ca26b016571bbba4eaf4889e6d391dce, type: 2}
+  ison: 0
