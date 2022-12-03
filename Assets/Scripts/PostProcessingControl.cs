@@ -14,11 +14,14 @@ public class PostProcessingControl : MonoBehaviour
     public float minSmoke = 0f;
 
     public Volume inSmoke;
+    public Volume outOfSmoke;
     public VolumeProfile[] profiles;
 
+    public ParticleSystem[] SmokePart;
 
 
     public bool ison = false;
+    public bool insmoke = false;
     void Start()
     {
 
@@ -32,34 +35,44 @@ public class PostProcessingControl : MonoBehaviour
         }   
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && material.GetFloat("_FullscreenIntensity") == 0f)
+        if (other.gameObject.CompareTag("Player") && material.GetFloat("_FullscreenIntensity") >= 0f && ison == false && insmoke == false)
         {
             StartCoroutine(InOfSmoke());
+            insmoke = true;
         }
+        
     }
     
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && material.GetFloat("_FullscreenIntensity") >= 0.3f)
+        if (other.gameObject.CompareTag("Player") && material.GetFloat("_FullscreenIntensity") >= 0.3f && ison == false)
         {
             StartCoroutine(OutOfSmoke());
+            insmoke = false;
         }
+        
     }
 
     void TurnOnVision()
     {
+        material.SetFloat("_FullscreenIntensity", 0f);
+
         if (ison == false)
         {
+            //SmokePart[0]. = 1f;
+            outOfSmoke.profile = profiles[1];
             inSmoke.profile = profiles[1];
             ison = true;
+            insmoke = false;
         }
         else
         if (ison == true)
         {
             ison = false;
             inSmoke.profile = profiles[0];
+            outOfSmoke.profile = profiles[2];
         }
     }
 
