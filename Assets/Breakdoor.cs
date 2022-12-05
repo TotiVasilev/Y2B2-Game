@@ -25,10 +25,18 @@ public class Breakdoor : MonoBehaviour
        if (other.gameObject.CompareTag("Player"))
         {
             pressUI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                door.SetActive(false);
-            }
         }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            pressUI.SetActive(false);
+            door.SetActive(false);
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        pressUI.SetActive(false);
     }
 }
