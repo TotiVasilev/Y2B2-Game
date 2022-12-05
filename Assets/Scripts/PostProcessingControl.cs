@@ -12,19 +12,22 @@ public class PostProcessingControl : MonoBehaviour
     public Material material;
     public float maxSmoke = 0.4f;
     public float minSmoke = 0f;
+   
+
+    public Material[] smokeVisual;
+    public Renderer[] rend;
+    
 
     public Volume inSmoke;
     public Volume outOfSmoke;
     public VolumeProfile[] profiles;
 
-    public ParticleSystem[] SmokePart;
-
-
+ 
     public bool ison = false;
     public bool insmoke = false;
     void Start()
     {
-       
+
     }
 
     void Update()
@@ -61,18 +64,7 @@ public class PostProcessingControl : MonoBehaviour
 
         if (ison == false)
         {
-            Gradient grad = new Gradient();
-            grad.SetKeys(
-                new GradientColorKey[] {
-            new GradientColorKey(Color.white, 0.0f),
-            new GradientColorKey(Color.white, 1.0f) },
-                new GradientAlphaKey[] {
-            new GradientAlphaKey(1, 0.0f),
-            new GradientAlphaKey(1, 1.0f) });
-
-            //SmokePart[0]. = grad;
-            //SmokePart[0].startColor = seeThroughSmoke;
-            SmokePart[0].startSize = 1f;
+            rend[0].sharedMaterial = smokeVisual[1];
             outOfSmoke.profile = profiles[1];
             inSmoke.profile = profiles[1];
             ison = true;
@@ -81,7 +73,7 @@ public class PostProcessingControl : MonoBehaviour
         else
         if (ison == true)
         {
-            SmokePart[0].startSize = 4f;
+            rend[0].sharedMaterial = smokeVisual[0];
             ison = false;
             inSmoke.profile = profiles[0];
             outOfSmoke.profile = profiles[2];
