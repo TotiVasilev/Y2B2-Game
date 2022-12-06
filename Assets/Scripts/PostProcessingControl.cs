@@ -42,7 +42,7 @@ public class PostProcessingControl : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && material.GetFloat("_FullscreenIntensity") >= 0f && ison == false && insmoke == false)
         {
-            StartCoroutine(InOfSmoke());
+            StartCoroutine(InSmoke());
             insmoke = true;
         }
         
@@ -80,7 +80,7 @@ public class PostProcessingControl : MonoBehaviour
         }
     }
 
-    IEnumerator InOfSmoke()
+    IEnumerator InSmoke()
     {
         material.SetFloat("_FullscreenIntensity", 0.1f);
         yield return new WaitForSeconds(0.4f);
