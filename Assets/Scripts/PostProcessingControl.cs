@@ -21,7 +21,7 @@ public class PostProcessingControl : MonoBehaviour
     public Volume inSmoke;
     public Volume outOfSmoke;
     public VolumeProfile[] profiles;
-
+    public GameObject heatVision;
  
     public bool ison = false;
     public bool insmoke = false;
@@ -64,6 +64,7 @@ public class PostProcessingControl : MonoBehaviour
 
         if (ison == false)
         {
+            heatVision.SetActive(true);
             rend[0].sharedMaterial = smokeVisual[1];
             outOfSmoke.profile = profiles[1];
             inSmoke.profile = profiles[1];
@@ -73,6 +74,7 @@ public class PostProcessingControl : MonoBehaviour
         else
         if (ison == true)
         {
+            heatVision.SetActive(false);
             rend[0].sharedMaterial = smokeVisual[0];
             ison = false;
             inSmoke.profile = profiles[0];
@@ -82,6 +84,7 @@ public class PostProcessingControl : MonoBehaviour
 
     IEnumerator InSmoke()
     {
+        StopCoroutine(OutOfSmoke());
         material.SetFloat("_FullscreenIntensity", 0.1f);
         yield return new WaitForSeconds(0.4f);
         material.SetFloat("_FullscreenIntensity", 0.2f);
@@ -94,6 +97,7 @@ public class PostProcessingControl : MonoBehaviour
 
     IEnumerator OutOfSmoke()
     {
+        StopCoroutine(InSmoke());
         material.SetFloat("_FullscreenIntensity", 0.3f);
         yield return new WaitForSeconds(0.4f);
         material.SetFloat("_FullscreenIntensity", 0.2f);

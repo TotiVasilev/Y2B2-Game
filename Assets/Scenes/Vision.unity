@@ -6239,7 +6239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &909811897
 Transform:
   m_ObjectHideFlags: 0
@@ -6391,7 +6391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press "E" to break down the door
+  m_text: Press "V" to break down the door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6832,6 +6832,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7110954086f569843a262ebb87534b88, type: 2}
   - {fileID: 11400000, guid: ca26b016571bbba4eaf4889e6d391dce, type: 2}
   - {fileID: 11400000, guid: 7c1f58c1a1e99d849af5014f03c87a14, type: 2}
+  heatVision: {fileID: 909811896}
   ison: 0
   insmoke: 0
 --- !u!1 &1649661047
@@ -7083,6 +7084,7 @@ MonoBehaviour:
   profiles:
   - {fileID: 11400000, guid: 7110954086f569843a262ebb87534b88, type: 2}
   - {fileID: 11400000, guid: ca26b016571bbba4eaf4889e6d391dce, type: 2}
+  heatVision: {fileID: 0}
   ison: 0
   insmoke: 0
 --- !u!1 &1751711797
@@ -7253,7 +7255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764101863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.82, y: 1.43, z: 3.99}
+  m_LocalPosition: {x: -2.82, y: 1.43, z: 2.41}
   m_LocalScale: {x: 2.234, y: 3.2882, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
