@@ -770,7 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272650505}
   - component: {fileID: 272650506}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: enviroment pp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,6 +809,12 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: b5c9428caec1964498eba1088a7d8f3d, type: 2}
+--- !u!4 &290958468 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+    type: 3}
+  m_PrefabInstance: {fileID: 1023052347970874712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &417731276
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,7 +5923,7 @@ GameObject:
   - component: {fileID: 838857155}
   - component: {fileID: 838857154}
   - component: {fileID: 838857153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6222,6 +6228,95 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &878342935
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 290958468}
+    m_Modifications:
+    - target: {fileID: 1023052348354257840, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: pressUI
+      value: 
+      objectReference: {fileID: 948214334}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257845, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257855, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_Name
+      value: BreakableDoor - JUST FOR TESTING (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257855, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b540f5a44554db94382434ff78b50c54, type: 3}
 --- !u!1 &909811896
 GameObject:
   m_ObjectHideFlags: 0
@@ -7010,7 +7105,7 @@ GameObject:
   - component: {fileID: 1698237000}
   - component: {fileID: 1698236999}
   - component: {fileID: 1698237004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MaterialChangeTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12014,7 +12109,7 @@ GameObject:
   - component: {fileID: 4464629650118346}
   - component: {fileID: 33023505511793520}
   - component: {fileID: 23087461655601122}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Capsule Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12560,6 +12655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BreakableDoor - JUST FOR TESTING
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023052348354257855, guid: b540f5a44554db94382434ff78b50c54,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b540f5a44554db94382434ff78b50c54, type: 3}
