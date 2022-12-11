@@ -79,6 +79,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 70
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -104,7 +105,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Temperature: 27.6
+    - _Temperature: 30
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
