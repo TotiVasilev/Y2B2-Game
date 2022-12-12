@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - one
   layers:
   - Default
   - TransparentFX
@@ -12,10 +13,10 @@ TagManager:
   - Water
   - UI
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Thermal
+  - no Outline
+  - Outline
   - 
   - 
   - 
