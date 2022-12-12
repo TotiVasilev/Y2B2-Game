@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,9 +21,7 @@ public class Breakdoor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
         {
-            pressUI.SetActive(false);
-            door.SetActive(false);
-
+           StartCoroutine("BreakDoor");
         }
     }
 
@@ -41,4 +40,12 @@ public class Breakdoor : MonoBehaviour
     {
         pressUI.SetActive(false);
     }
+
+    private IEnumerator BreakDoor()
+    {
+        yield return new WaitForSeconds(0.7f);
+        pressUI.SetActive(false);
+        door.SetActive(false);
+    }
+        
 }
