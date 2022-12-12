@@ -6,6 +6,7 @@ public class Breakdoor : MonoBehaviour
 {
     public GameObject door;
     public GameObject pressUI;
+    bool canBeOpened;
 
 
     // Start is called before the first frame update
@@ -17,7 +18,12 @@ public class Breakdoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
+        {
+            pressUI.SetActive(false);
+            door.SetActive(false);
+
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -25,14 +31,10 @@ public class Breakdoor : MonoBehaviour
        if (other.gameObject.CompareTag("Player"))
         {
             pressUI.SetActive(true);
+            canBeOpened = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            pressUI.SetActive(false);
-            door.SetActive(false);
-
-        }
+        
     }
 
     private void OnTriggerExit(Collider other)
