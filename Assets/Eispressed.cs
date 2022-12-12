@@ -14,7 +14,7 @@ public class Eispressed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKey(KeyCode.E))
+       if (Input.GetKey(KeyCode.V))
         {
             animator.SetTrigger("Attack");
         }
