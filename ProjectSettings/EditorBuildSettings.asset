@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ladder + Fire.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/PrototypeLevel.unity
+    guid: b6e391415eccfd243a042b8b3376ac2a
   m_configObjects: {}
