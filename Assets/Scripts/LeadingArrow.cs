@@ -37,7 +37,7 @@ public class LeadingArrow : MonoBehaviour
         //float glow = Time.deltaTime * dist;     
 
         //temperature = - dist + 30;
-        origin = - dist + 5 ;
+        origin = - dist + 3 ;
 
         rend.material.SetFloat("_Origin", origin);
         rend.material.SetFloat("_Glow", glow);
