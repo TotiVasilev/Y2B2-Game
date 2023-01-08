@@ -27,12 +27,9 @@ public class S_StartDoorGlow : MonoBehaviour
     {
         rend.material.SetFloat("_Highlight", glow);
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        StartCoroutine(EmissionUp());
-    }
 
-    IEnumerator EmissionUp()
+
+    public IEnumerator EmissionUp()
     {
         while (glow > 0.003)
         {
