@@ -7,6 +7,8 @@ public class S_StartDoorGlow : MonoBehaviour
 {
     Renderer rend;
 
+    public GameObject interactableDoor;
+
     float fullGlow = 0.01f;
     public float lightTime = 0.001f;
     float glow;
@@ -14,23 +16,20 @@ public class S_StartDoorGlow : MonoBehaviour
     void Awake()
     {
 
-        rend = GetComponent<Renderer>();
+        rend = interactableDoor.GetComponent<Renderer>();
         rend.material = new Material(rend.material);
 
         glow = fullGlow;
         rend.material.SetFloat("_Highlight", glow);
-        StartCoroutine(EmissionUp());
+        
     }
     private void Update()
     {
         rend.material.SetFloat("_Highlight", glow);
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        //speed = speed * -1;
-    }
 
-    IEnumerator EmissionUp()
+
+    public IEnumerator EmissionUp()
     {
         while (glow > 0.003)
         {

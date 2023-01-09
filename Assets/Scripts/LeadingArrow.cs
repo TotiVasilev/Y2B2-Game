@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LeadingArrow : MonoBehaviour
 {
-    GameObject endOfArrow;
+    public GameObject endOfArrow;
     GameObject player;
     Renderer rend;
 
@@ -19,7 +19,7 @@ public class LeadingArrow : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindWithTag("Player");
-        endOfArrow = GameObject.FindWithTag("Checkpoint");
+        //endOfArrow = GameObject.FindWithTag("Checkpoint");
 
         rend = GetComponent<Renderer>();
         rend.material = new Material(rend.material);
@@ -37,7 +37,7 @@ public class LeadingArrow : MonoBehaviour
         //float glow = Time.deltaTime * dist;     
 
         //temperature = - dist + 30;
-        origin = - dist + 3 ;
+        origin = - dist + 4;
 
         rend.material.SetFloat("_Origin", origin);
         rend.material.SetFloat("_Glow", glow);
