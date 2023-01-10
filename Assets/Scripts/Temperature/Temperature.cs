@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Temperature : MonoBehaviour
+
+{
+    float CurrentTemp = 20;
+    public float RaisingTemp;
+    public float MaxTemp;
+
+    public Text text;
+
+    private void Update()
+    {
+        text.text = CurrentTemp.ToString();
+    }
+    public void Raise()
+    {
+        if(CurrentTemp < MaxTemp)
+        CurrentTemp = CurrentTemp + RaisingTemp * Time.deltaTime;
+    }
+
+    public void Lower()
+    {
+        if(CurrentTemp > MaxTemp)
+        CurrentTemp = CurrentTemp - RaisingTemp * Time.deltaTime;
+    }
+}
