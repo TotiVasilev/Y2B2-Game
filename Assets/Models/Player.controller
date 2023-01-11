@@ -60,7 +60,7 @@ AnimatorState:
   m_PrefabAsset: {fileID: 0}
   m_Name: New State
   m_Speed: 1
-  m_CycleOffset: 0
+  m_CycleOffset: 1
   m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
@@ -142,19 +142,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Idle
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Vault
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -182,10 +182,10 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: -50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6482313413101569502}
-    m_Position: {x: 310, y: 170, z: 0}
+    m_Position: {x: 320, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6018130738614085826}
-    m_Position: {x: 306.8936, y: 20.443085, z: 0}
+    m_Position: {x: 310, y: 20, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6742903716173826901}

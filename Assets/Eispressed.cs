@@ -14,6 +14,7 @@ public class Eispressed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
        if (Input.GetKey(KeyCode.V))
         {
             animator.SetTrigger("Attack");
@@ -21,11 +22,15 @@ public class Eispressed : MonoBehaviour
 
         if (Input.GetKey(KeyCode.F))
         {
+            
+            transform.position = new Vector3(5.53f,0.92f,3.12f);
             animator.SetTrigger("Vault");
-        }
-    
+            //animator.enabled =true;
 
+            //StartCoroutine(VaultWindow());
+            
+    
+        }
         
     }
-
 }

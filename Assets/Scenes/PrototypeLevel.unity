@@ -507,6 +507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: axe animations
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 616c20cd7b070f74bb2bfa2c45b37080,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6017510239773530926, guid: 616c20cd7b070f74bb2bfa2c45b37080,
         type: 3}
       propertyPath: m_IsActive
@@ -9153,7 +9158,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524460025736136761}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1524460025736136759
 Camera:
   m_ObjectHideFlags: 0
@@ -9261,7 +9266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524460027170068532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.53, y: 0.92, z: 3.11}
+  m_LocalPosition: {x: 5.53, y: 0.92, z: -2.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9449,7 +9454,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e49570466553eae4d96322774f471c23, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
