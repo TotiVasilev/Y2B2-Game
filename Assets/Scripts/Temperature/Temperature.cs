@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Temperature : MonoBehaviour
 
 {
-    float CurrentTemp = 20;
+    static float CurrentTemp = 20;
     public float RaisingTemp;
     public float MaxTemp;
 
@@ -18,7 +18,8 @@ public class Temperature : MonoBehaviour
     }
     public void Raise()
     {
-        if(CurrentTemp < MaxTemp)
+        if (CurrentTemp < MaxTemp)
+            //CurrentTemp++;
         CurrentTemp = CurrentTemp + RaisingTemp * Time.deltaTime;
     }
 
@@ -27,4 +28,5 @@ public class Temperature : MonoBehaviour
         if(CurrentTemp > MaxTemp)
         CurrentTemp = CurrentTemp - RaisingTemp * Time.deltaTime;
     }
+
 }
