@@ -14,7 +14,7 @@ public class Temperature : MonoBehaviour
 
     private void Update()
     {
-        text.text = CurrentTemp.ToString();
+        text.text = "°C" + CurrentTemp.ToString("f1");
     }
     public void Raise()
     {
