@@ -5,20 +5,17 @@ using UnityEngine;
 public class Minimap : MonoBehaviour
 {
 
-    public Transform player;
+    public Transform Player;
 
     void LateUpdate()
     {
 
-        Vector3 newPosition = player.position;
+        Vector3 newPosition = Player.position;
         newPosition.y = transform.position.y;
         transform.position = newPosition;
 
-        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
+
     }
 
 
 }
-
-
-
