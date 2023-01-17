@@ -3,77 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PopUpWindow : MonoBehaviour
+public class PopupWindow : MonoBehaviour
 {
-
     public TMP_Text popupText;
 
     private GameObject window;
     private Animator popupAnimator;
 
-        private Queue<string> popupQueue;
-    private bool IsActive;
+    private Queue<string> popupQueue; //make it different type for more detailed popups, you can add different types, titles, descriptions etc
     private Coroutine queueChecker;
 
-
-    public void Start()
+    private void Start()
     {
-
         window = transform.GetChild(0).gameObject;
-            popupAnimator = window.GetComponent<Animator>();
+        popupAnimator = window.GetComponent<Animator>();
         window.SetActive(false);
         popupQueue = new Queue<string>();
-
     }
 
-    public void AddToQueu(string text)
-    {
+    public void AddToQueue(string text)
+    {//parameter the same type as queue
         popupQueue.Enqueue(text);
         if (queueChecker == null)
-            queueChecker = StartCoroutine(checkQueue());
-
+            queueChecker = StartCoroutine(CheckQueue());
     }
 
-
     private void ShowPopup(string text)
-    {
-
-        IsActive = true;
+    { //parameter the same type as queue
         window.SetActive(true);
         popupText.text = text;
         popupAnimator.Play("PopupAnimation");
-
     }
 
-    private IEnumerator CheckQueu()
+    private IEnumerator CheckQueue()
     {
         do
         {
-
             ShowPopup(popupQueue.Dequeue());
-           do {
-
-             yield return null;
-
-            } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("idle"));
-
+            do
+            {
+                yield return null;
+            } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"));
 
         } while (popupQueue.Count > 0);
-        IsActive = false;
         window.SetActive(false);
-        queueChecker = 0;
-
-
-
-
+        queueChecker = null;
     }
 
-
-
 }
-
-
-
-   
-
-
