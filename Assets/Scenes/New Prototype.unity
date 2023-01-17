@@ -1745,12 +1745,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 297601614}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &588954509 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8178917731176560189, guid: 3eed3c2aed37f724d84e5776b37bee15,
-    type: 3}
-  m_PrefabInstance: {fileID: 1637173851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &590878703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,69 +2820,6 @@ Transform:
   m_Father: {fileID: 1010774591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &962133262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 962133263}
-  - component: {fileID: 962133265}
-  - component: {fileID: 962133264}
-  m_Layer: 0
-  m_Name: Box Volume Smoke PP 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &962133263
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962133262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.7, y: -1.8520516, z: 4.38}
-  m_LocalScale: {x: 7.548006, y: 3, z: 3.6549988}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 588954509}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &962133264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962133262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 0
-  priority: 0
-  blendDistance: 3
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 7110954086f569843a262ebb87534b88, type: 2}
---- !u!65 &962133265
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962133262}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.9481704, y: 1, z: 1}
-  m_Center: {x: -0.97408366, y: 0, z: 0}
 --- !u!1 &1010774584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4646,6 +4577,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box Volume Smoke PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374521472806507376, guid: 3eed3c2aed37f724d84e5776b37bee15,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14.789356
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374521472806507376, guid: 3eed3c2aed37f724d84e5776b37bee15,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14.380233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374521472806507376, guid: 3eed3c2aed37f724d84e5776b37bee15,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374521472806507376, guid: 3eed3c2aed37f724d84e5776b37bee15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 2374521472806507377, guid: 3eed3c2aed37f724d84e5776b37bee15,
         type: 3}
