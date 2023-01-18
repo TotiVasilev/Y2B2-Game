@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     public float xSens = 30f;
     public float ySens = 30f;
 
+    public void OnTransform(InputAction.CallbackContext context)
+    {
+        pressF();
+    }
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
@@ -66,8 +70,16 @@ public class PlayerController : MonoBehaviour
     {
         if(grounded)
         {
+            gameObject.transform.position = new Vector3(2f,2f,2f);
             playerVelocity.y = Mathf.Sqrt(jumpForce * -3f * gravity);
         }
+    }
+
+    public void pressF()
+    {
+        
+        transform.position = new Vector3(2f,2f,2f);
+    
     }
 
     public void playerLook()
