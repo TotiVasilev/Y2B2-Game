@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44377488, g: 0.4931243, b: 0.57265157, a: 1}
+  m_IndirectSpecularColor: {r: 0.44377565, g: 0.49312514, b: 0.5726524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -905,7 +905,7 @@ Transform:
   - {fileID: 36750975}
   - {fileID: 54412384}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77607245
 GameObject:
@@ -1325,6 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2ed87ea4df67c45a31c574d947987d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
 --- !u!95 &171972198
 Animator:
   serializedVersion: 4
@@ -3032,7 +3033,7 @@ Transform:
   - {fileID: 1180552602}
   - {fileID: 1148176726}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &765808090
 GameObject:
@@ -3808,6 +3809,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f8f57bf3-d73d-429a-b28d-f4210be17b59
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 938488be-ce13-4d92-9010-3ff91892d31b
+    m_ActionName: Player/Transform[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -3990,7 +3995,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1045501881
 MonoBehaviour:
@@ -4262,7 +4267,7 @@ RectTransform:
   m_Children:
   - {fileID: 687749465}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4276,7 +4281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111320945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a44e504b847b4e5419f16689f3501cca, type: 3}
   m_Name: 
@@ -5932,7 +5937,7 @@ PrefabInstance:
     - target: {fileID: 246304873410074479, guid: 3eed3c2aed37f724d84e5776b37bee15,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2374521471768894140, guid: 3eed3c2aed37f724d84e5776b37bee15,
         type: 3}
