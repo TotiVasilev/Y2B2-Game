@@ -25,8 +25,8 @@ public class Eispressed : MonoBehaviour
 
         if (Input.GetKey(KeyCode.F))
         {
-            
-            gameObject.transform.position = new Vector3(5.53f,0.92f,3.12f);
+            //transform.position = new Vector3(2f,2f,2f);
+            //transform.position = new Vector3(5.53f,0.92f,3.12f);
             animator.SetTrigger("Vault");
             //animator.enabled =true;
 

@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         if(grounded)
         {
-            gameObject.transform.position = new Vector3(2f,2f,2f);
+            
             playerVelocity.y = Mathf.Sqrt(jumpForce * -3f * gravity);
         }
     }
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     public void pressF()
     {
         
-        transform.position = new Vector3(2f,2f,2f);
+        //transform.position = new Vector3(2f,2f,2f);
     
     }
 
