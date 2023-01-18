@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
 public class LeadingArrow : MonoBehaviour
@@ -12,6 +13,8 @@ public class LeadingArrow : MonoBehaviour
     float fullGlow = 60;
     public float lightTime = 10;
     float glow;
+
+    public float farness = 4;
 
     //public float temperature;
     public float origin;
@@ -37,7 +40,7 @@ public class LeadingArrow : MonoBehaviour
         //float glow = Time.deltaTime * dist;     
 
         //temperature = - dist + 30;
-        origin = - dist + 4;
+        origin = - dist + farness;
 
         rend.material.SetFloat("_Origin", origin);
         rend.material.SetFloat("_Glow", glow);
