@@ -15,7 +15,7 @@ public class GameOverScreen : MonoBehaviour
 
     
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("New Prototype");
 
     }
 
