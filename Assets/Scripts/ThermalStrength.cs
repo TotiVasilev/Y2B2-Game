@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,15 +9,20 @@ public class ThermalStrength : MonoBehaviour
     GameObject player;
     Renderer rend;
 
-    public float temperature;
-    public float alpha;
+    [SerializeField]
+    private float temperature;
+    [SerializeField]
+    private float alpha;
+    [SerializeField]
+    private int materialIndex;
+    Renderer myRenderer;
 
     void Awake()
     {
         player = GameObject.FindWithTag("Player");
-
-        rend = GetComponent<Renderer>();
-        rend.material = new Material(rend.material);
+        myRenderer = GetComponent<Renderer>();
+    //    rend = GetComponent<Renderer>();
+    //    rend.material = new Material(rend.material);
     }
 
     // Update is called once per frame
@@ -24,10 +30,10 @@ public class ThermalStrength : MonoBehaviour
     {
         float dist = Vector3.Distance(player.transform.position, transform.position);
      
-        temperature = - dist + 30;
-        alpha = - dist + 10;
+        temperature = - dist + 50;
+        alpha = - dist + 30;
 
-        rend.material.SetFloat("_Alpha", alpha);
-        rend.material.SetFloat("_Temperature", temperature);
+        myRenderer.materials[materialIndex].SetFloat("_Alpha", alpha);
+        myRenderer.materials[materialIndex].SetFloat("_Temperature", temperature);
     }
 }
