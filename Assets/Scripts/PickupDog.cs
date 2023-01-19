@@ -9,13 +9,17 @@ public class PickupDog : MonoBehaviour
     public GameObject pressUI;
     bool canBeOpened;
     public GameObject DEBRIS;
+    public GameObject window;
+    public GameObject safetyairbag;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && canBeOpened == true)
         {
             DOG.SetActive(false);
             DEBRIS.SetActive(true);
+            window.SetActive(false);
             pressUI.SetActive(false);
+            safetyairbag.SetActive(true);
         }
     }
 

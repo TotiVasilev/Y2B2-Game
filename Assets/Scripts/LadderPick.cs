@@ -8,14 +8,14 @@ public class LadderPick : MonoBehaviour
     public GameObject ladderToPutCollider;
     public GameObject ladderToHold;
     public GameObject pickUItext;
-    bool canPressE;
+    bool canPressR;
     void Start()
     {
-        canPressE = false;
+        canPressR = false;
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && canPressE == true)
+        if(Input.GetKeyDown(KeyCode.R) && canPressR == true)
         {
             pickUItext.SetActive(false);
             Destroy(gameObject);
@@ -29,14 +29,14 @@ public class LadderPick : MonoBehaviour
 
         if ((other.gameObject.tag == "Player"))
         {
-            canPressE = true;
+            canPressR = true;
             
         }
     }
 
     void OnTriggerExit()
     {
-        canPressE = false;
+        canPressR = false;
         pickUItext.SetActive(false);
     }
 }

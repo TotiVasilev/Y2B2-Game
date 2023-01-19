@@ -7,15 +7,15 @@ public class LadderPut : MonoBehaviour
     public GameObject ladderToPut;
     public GameObject ladderToHold;
     public GameObject placeUItext;
-    bool canPresE;
+    bool canPresR;
     void Start()
     {
-        canPresE = false;
+        canPresR = false;
     }
 
     void Update()
     {
-        if(Input.GetKeyDown (KeyCode.E) && canPresE == true)
+        if(Input.GetKeyDown(KeyCode.R) && canPresR == true)
         {
             placeUItext.SetActive(false);
             Destroy(gameObject);
@@ -30,13 +30,13 @@ public class LadderPut : MonoBehaviour
         
         if ((other.gameObject.tag == "Player"))
         {
-            canPresE = true;
+            canPresR = true;
         }
     }
 
     void OnTriggerExit()
     {
         placeUItext.SetActive(false);
-        canPresE = false;
+        canPresR = false;
     }
 }
