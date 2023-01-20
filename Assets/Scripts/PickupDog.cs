@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickupDog : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PickupDog : MonoBehaviour
     public GameObject DEBRIS;
     public GameObject window;
     public GameObject safetyairbag;
+
+    public GameObject axe;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && canBeOpened == true)
@@ -20,6 +23,12 @@ public class PickupDog : MonoBehaviour
             window.SetActive(false);
             pressUI.SetActive(false);
             safetyairbag.SetActive(true);
+        }
+
+        if(Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
+        {
+            axe.SetActive(true);
+            StartCoroutine(SceneChange());
         }
     }
 
@@ -36,5 +45,11 @@ public class PickupDog : MonoBehaviour
     {
         pressUI.SetActive(false);
         canBeOpened = false;
-    }     
+    }
+
+    IEnumerator SceneChange()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(sceneName: "DeathMenu");
+    }
 }

@@ -1830,6 +1830,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6017510239773530926, guid: 616c20cd7b070f74bb2bfa2c45b37080,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 616c20cd7b070f74bb2bfa2c45b37080, type: 3}
 --- !u!4 &171972195 stripped
@@ -2058,7 +2063,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -3170,7 +3175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -808, y: -408}
+  m_AnchoredPosition: {x: 813, y: 401}
   m_SizeDelta: {x: 230.1452, y: 220.4886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366684900
@@ -3324,6 +3329,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &416964191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6017510239773530926, guid: 616c20cd7b070f74bb2bfa2c45b37080,
+    type: 3}
+  m_PrefabInstance: {fileID: 171972194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &421270987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,6 +3616,7 @@ MonoBehaviour:
   door: {fileID: 454912287}
   pressUI: {fileID: 525636724}
   arrow: {fileID: 1550478450}
+  axe: {fileID: 416964191}
 --- !u!64 &454912292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4182,7 +4194,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -4424,6 +4436,7 @@ MonoBehaviour:
   door: {fileID: 539770511}
   pressUI: {fileID: 525636724}
   arrow: {fileID: 367915967}
+  axe: {fileID: 416964191}
 --- !u!64 &539770516
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5533,6 +5546,7 @@ MonoBehaviour:
   door: {fileID: 666833176}
   pressUI: {fileID: 525636724}
   arrow: {fileID: 367915967}
+  axe: {fileID: 416964191}
 --- !u!64 &666833181
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6818,7 +6832,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -9712,7 +9726,7 @@ RectTransform:
   m_GameObject: {fileID: 1050588961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5745, y: 1.5745, z: 1.5745}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2041181765}
@@ -9720,8 +9734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 0.000015258789}
-  m_SizeDelta: {x: 200, y: 47.6218}
+  m_AnchoredPosition: {x: 10, y: -14}
+  m_SizeDelta: {x: 53.43, y: 47.6218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050588963
 MonoBehaviour:
@@ -9743,7 +9757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O2%
+  m_text: O2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11332,7 +11346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5578809, y: 0.5}
-  m_AnchoredPosition: {x: -896, y: 493}
+  m_AnchoredPosition: {x: 572, y: 493}
   m_SizeDelta: {x: 50.129898, y: 56.9901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1238381672
@@ -11399,7 +11413,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -11468,7 +11482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 834, y: -465}
+  m_AnchoredPosition: {x: -879, y: 454}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1241447920
@@ -17231,7 +17245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 881.5, y: 195.5674}
+  m_AnchoredPosition: {x: -814, y: 309}
   m_SizeDelta: {x: 129.05, y: 135.6731}
   m_Pivot: {x: 0.59512895, y: 0.5000001}
 --- !u!114 &2041181766
@@ -22736,6 +22750,7 @@ MonoBehaviour:
   DEBRIS: {fileID: 584178188}
   window: {fileID: 469898387}
   safetyairbag: {fileID: 1841858528}
+  axe: {fileID: 0}
 --- !u!65 &919132148397750070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69071,7 +69086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 862, y: 467}
+  m_AnchoredPosition: {x: -653, y: 437}
   m_SizeDelta: {x: -1776.5, y: -1019.1999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6016794254625289049
@@ -151786,6 +151801,7 @@ MonoBehaviour:
   door: {fileID: 4423045620677240867}
   pressUI: {fileID: 525636724}
   arrow: {fileID: 367915967}
+  axe: {fileID: 416964191}
 --- !u!65 &9077926073418843693
 BoxCollider:
   m_ObjectHideFlags: 0

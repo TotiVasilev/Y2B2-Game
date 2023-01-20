@@ -9,12 +9,14 @@ public class Breakdoor : MonoBehaviour
     public GameObject pressUI;
     bool canBeOpened;
     public GameObject arrow;
+    public GameObject axe;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
         {
             StartCoroutine("BreakDoor");
             arrow.SetActive(false);
+            axe.SetActive(true);
         }
     }
 
@@ -35,6 +37,7 @@ public class Breakdoor : MonoBehaviour
     private IEnumerator BreakDoor()
     {
         yield return new WaitForSeconds(0.7f);
+        axe.SetActive(false);
         pressUI.SetActive(false);
         door.SetActive(false);
     }
