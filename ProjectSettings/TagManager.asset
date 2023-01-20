@@ -6,6 +6,7 @@ TagManager:
   tags:
   - one
   - Checkpoint
+  - Script Manager
   layers:
   - Default
   - TransparentFX

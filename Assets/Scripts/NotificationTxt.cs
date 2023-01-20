@@ -9,7 +9,7 @@ public class NotificationTxt : MonoBehaviour
 
     public string PopUP;
 
-    void start()
+    void Start()
     {
 
 

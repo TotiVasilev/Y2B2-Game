@@ -467,6 +467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_FloorLeadingArrow1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763928, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
       propertyPath: m_RootOrder
@@ -536,6 +541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6866961934821895652, guid: 889cd868515630d428d0f5561179f20c, type: 3}
@@ -848,6 +858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_FloorLeadingArrow1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763928, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
       propertyPath: m_RootOrder
@@ -922,6 +937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8504746640337105498, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
@@ -3031,6 +3051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -3108,6 +3133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8504746640337105498, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
@@ -9827,9 +9857,10 @@ GameObject:
   - component: {fileID: 1045501882}
   - component: {fileID: 1045501883}
   - component: {fileID: 1045501884}
+  - component: {fileID: 1045501885}
   m_Layer: 0
   m_Name: Script Manager
-  m_TagString: Untagged
+  m_TagString: Script Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9903,7 +9934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpBox: {fileID: 1148184772}
-  animator: {fileID: 0}
+  animator: {fileID: 1045501885}
   popUpText: {fileID: 1853980634}
 --- !u!114 &1045501883
 MonoBehaviour:
@@ -9949,6 +9980,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &1045501885
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045501877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 576fe5d11b88d414cae84a2718d2c67b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1048556626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: 30ab310c6457ffb42af035f02294ff33,
@@ -11284,6 +11335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -11361,6 +11417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8504746640337105498, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
@@ -11821,6 +11882,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -11903,6 +11969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8504746640337105498, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
@@ -12856,6 +12927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -12933,6 +13009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Checkpoint4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8504746640337105498, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
@@ -13684,6 +13765,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_FloorLeadingArrow1
       objectReference: {fileID: 0}
+    - target: {fileID: 8504746639379763908, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8504746639379763928, guid: 889cd868515630d428d0f5561179f20c,
         type: 3}
       propertyPath: m_RootOrder
@@ -13748,6 +13834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504746640337105477, guid: 889cd868515630d428d0f5561179f20c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889cd868515630d428d0f5561179f20c, type: 3}
@@ -15717,8 +15808,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1975184417}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1841858532
-MeshCollider:
+--- !u!114 &1841858535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841858528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2554a577749144c9fb5cfc73b999fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1841858536
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15727,10 +15830,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4493585093827132993, guid: 2c0f43bb756ccbb4d8c8a7f4bbea9f76, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.030363884, y: 0.020125119, z: 0.014159159}
+  m_Center: {x: -0.00022970418, y: -0.00010685341, z: 0.0045169787}
+--- !u!65 &1841858537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841858528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030363884, y: 0.020125119, z: -0.03}
+  m_Center: {x: -0.00022970418, y: -0.00010685341, z: 0.0045169787}
 --- !u!1 &1853980632
 GameObject:
   m_ObjectHideFlags: 0
@@ -16789,7 +16904,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2c0f43bb756ccbb4d8c8a7f4bbea9f76,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0f43bb756ccbb4d8c8a7f4bbea9f76, type: 3}
