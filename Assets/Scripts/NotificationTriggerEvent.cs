@@ -17,7 +17,7 @@ public class NotificationTriggerEvent : MonoBehaviour
     [Header("Notification Removal")]
     [SerializeField] private bool removeAfterExit = false;
     [SerializeField] private bool disableAfterTimer = false;
-    [SerializeField] float disableTimer = 1.0f;
+    [SerializeField] float disableTimer = 0.3f;
 
     [Header("Notification Animation")]
     [SerializeField] private Animator notificationAnim;
