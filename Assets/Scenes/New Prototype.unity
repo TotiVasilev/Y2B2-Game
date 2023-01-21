@@ -2250,6 +2250,124 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224980898}
   m_CullTransparentMesh: 1
+--- !u!1 &233337880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233337881}
+  - component: {fileID: 233337885}
+  - component: {fileID: 233337884}
+  - component: {fileID: 233337883}
+  - component: {fileID: 233337882}
+  m_Layer: 0
+  m_Name: Quest cube 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233337881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233337880}
+  m_LocalRotation: {x: 0.002480531, y: 0.6839591, z: -0.0023165098, w: 0.7295125}
+  m_LocalPosition: {x: -3.36, y: 0.54, z: -0.32}
+  m_LocalScale: {x: 8.107269, y: 1, z: 8.270091}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 584178191}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233337882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233337880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817c8f67f76b28549a09f4621073d3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationTextUI: {fileID: 1899285854}
+  characterIconUI: {fileID: 1176641656}
+  exclamationmark: {fileID: 0}
+  notificationMessage: The window!!
+  removeAfterExit: 1
+  disableAfterTimer: 1
+  disableTimer: 3
+  notificationAnim: {fileID: 708337885}
+--- !u!65 &233337883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233337880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &233337884
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233337880}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &233337885
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233337880}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &237474506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2364,10 +2482,10 @@ MonoBehaviour:
   notificationTextUI: {fileID: 1899285854}
   characterIconUI: {fileID: 1176641656}
   exclamationmark: {fileID: 0}
-  notificationMessage: Find the family dog
+  notificationMessage: Find the dog
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 3
   notificationAnim: {fileID: 708337885}
 --- !u!65 &239231304
 BoxCollider:
@@ -2441,7 +2559,7 @@ Transform:
   m_GameObject: {fileID: 239231302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.33, y: 4.151, z: -1.595}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9865, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3464,7 +3582,7 @@ MonoBehaviour:
   notificationMessage: There must be another way
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 3
   notificationAnim: {fileID: 708337885}
 --- !u!65 &368902750
 BoxCollider:
@@ -3537,7 +3655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368902748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.901, y: 4.1466, z: -2.7499}
+  m_LocalPosition: {x: 23.865, y: 4.1466, z: -2.7499}
   m_LocalScale: {x: 1, y: 1.0568, z: 3.6188836}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5035,6 +5153,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.67, y: 2.13, z: 2.03}
   m_Center: {x: 0, y: 1.2, z: 0}
+--- !u!4 &584178191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e330e6dbda55f8947b7f4aeddaf4d780,
+    type: 3}
+  m_PrefabInstance: {fileID: 584178187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &587464278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5947,7 +6071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &677293905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5966,7 +6090,7 @@ MonoBehaviour:
   notificationMessage: Must rescue the dog!
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 3
   notificationAnim: {fileID: 708337885}
 --- !u!65 &677293906
 BoxCollider:
@@ -10146,18 +10270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fb4a2370e9afe409a53bc7bb9bd7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indicatorTimer: 1
-  maxIndicatorTimer: 1
-  radialIndicatorUI: {fileID: 2041181766}
-  selectKey: 282
-  myEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 11500000, guid: 38fb4a2370e9afe409a53bc7bb9bd7e0, type: 3}, m_TargetAssemblyTypeName: , m_MethodName: , m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: , m_IntArgument: 0, m_FloatArgument: 0,
-          m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
-  shouldUpdate: 0
 --- !u!95 &1045501886
 Animator:
   serializedVersion: 4
@@ -12900,7 +13012,7 @@ MonoBehaviour:
   notificationMessage: Take the ladder
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 4
   notificationAnim: {fileID: 708337885}
 --- !u!65 &1375899077
 BoxCollider:
@@ -12973,8 +13085,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375899075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.02, y: 0.88, z: -15.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.159, y: 0.88, z: -15.968}
+  m_LocalScale: {x: 2.0281, y: 1, z: 1.6931}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -13607,7 +13719,7 @@ MonoBehaviour:
   notificationMessage: Escape with the dog
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 3
   notificationAnim: {fileID: 708337885}
 --- !u!65 &1515715611
 BoxCollider:
@@ -13680,8 +13792,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515715609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.171, y: 4.131, z: 0.534}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 27.706, y: 4.131, z: 1.176}
+  m_LocalScale: {x: 1.5919, y: 1, z: 1.7448963}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -15848,7 +15960,7 @@ MonoBehaviour:
   notificationMessage: This room is too hot to enter
   removeAfterExit: 1
   disableAfterTimer: 1
-  disableTimer: 0.3
+  disableTimer: 3
   notificationAnim: {fileID: 708337885}
 --- !u!65 &1796271883
 BoxCollider:
@@ -15921,7 +16033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796271881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.118, y: 4.23, z: -1.611}
+  m_LocalPosition: {x: 9.118, y: 4.23, z: -2.112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16988,10 +17100,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8, type: 3}
-    m_FontSize: 66
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 123
     m_Alignment: 0
     m_AlignByGeometry: 0
