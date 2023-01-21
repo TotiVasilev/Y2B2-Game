@@ -17,7 +17,7 @@ public class NotificationTriggerEvent : MonoBehaviour
     [Header("Notification Removal")]
     [SerializeField] private bool removeAfterExit = false;
     [SerializeField] private bool disableAfterTimer = false;
-    [SerializeField] float disableTimer = 0.3f;
+    [SerializeField] float disableTimer = 3f;
 
     [Header("Notification Animation")]
     [SerializeField] private Animator notificationAnim;
@@ -25,57 +25,39 @@ public class NotificationTriggerEvent : MonoBehaviour
 
     private void Awake()
     {
-
         objectCollider = gameObject.GetComponent<BoxCollider>();
-
-
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            StartCoroutine(EnableNotification());
+        }
+    }
     private void OnTriggerExit(Collider other)
     {
-
         if (other.CompareTag("Player") && removeAfterExit)
         {
-
             RemoveNotification();
-
         }
-
     }
 
     IEnumerator EnableNotification()
     {
-
-
         objectCollider.enabled = false;
-        notificationAnim.Play("NotificationFadeIn");
+        notificationAnim.Play("NotificationFadeOut");
         notificationTextUI.text = notificationMessage;
         characterIconUI.sprite = exclamationmark;
 
-       if (disableAfterTimer)
-        {
-
-            yield return new WaitForSeconds(disableTimer);
-            RemoveNotification();
-
-
-
-        }
-
-
-
-
-
-
-
-
-
+        yield return new WaitForSeconds(disableTimer);
+        RemoveNotification();       
     }
 
     void RemoveNotification()
     {
 
-        notificationAnim.Play("NotificationFadeOut");
+        notificationAnim.Play("NotificationFadeIn");
         gameObject.SetActive(false);
     }
 
