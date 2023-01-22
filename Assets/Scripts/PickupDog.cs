@@ -25,7 +25,7 @@ public class PickupDog : MonoBehaviour
             safetyairbag.SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
+        if(Input.GetMouseButton(0) && canBeOpened == true)
         {
             axe.SetActive(true);
             StartCoroutine(SceneChange());
