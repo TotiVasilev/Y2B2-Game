@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PickupDog : MonoBehaviour
 {
+    public GameObject DogPicked;
     public GameObject DOG;
     public GameObject pressUI;
     bool canBeOpened;
@@ -23,6 +24,7 @@ public class PickupDog : MonoBehaviour
             window.SetActive(false);
             pressUI.SetActive(false);
             safetyairbag.SetActive(true);
+            DogPicked.SetActive(true);
         }
 
         if(Input.GetMouseButton(0) && canBeOpened == true)
