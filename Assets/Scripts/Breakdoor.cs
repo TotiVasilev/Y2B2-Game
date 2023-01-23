@@ -12,7 +12,7 @@ public class Breakdoor : MonoBehaviour
     public GameObject axe;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V) && canBeOpened == true)
+        if (Input.GetMouseButton(0) && canBeOpened == true)
         {
             StartCoroutine("BreakDoor");
             arrow.SetActive(false);

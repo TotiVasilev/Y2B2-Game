@@ -17,7 +17,7 @@ public class Eispressed : MonoBehaviour
     void Update()
     {
         
-       if (Input.GetKey(KeyCode.V))
+       if (Input.GetMouseButton(0))
         {
             
             animator.SetTrigger("Attack");
