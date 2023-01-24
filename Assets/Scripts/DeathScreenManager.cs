@@ -5,12 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class DeathScreenManager : MonoBehaviour
 {  
+    private void Start()
+    {
+        Mouse();
+    }
     public void Scene1()
     {  
-        SceneManager.LoadScene("New Prototype");  
+        
+        SceneManager.LoadScene("Respawn");  
+        
+        Debug.Log("Button was clicked");
     }  
     public void Scene2()
     {  
         SceneManager.LoadScene("MainMenu");  
     }  
+    public void Mouse()
+    {
+        Debug.Log("Check");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible=true;
+    }
 }

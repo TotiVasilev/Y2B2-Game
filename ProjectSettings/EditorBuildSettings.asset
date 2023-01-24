@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: 58b6d25bf5463004d9cec8d1732a9830
   - enabled: 1
-    path: Assets/Scenes/New Prototype.unity
+    path: Assets/Scenes/New Prototype 1.unity
+    guid: 9c9c71107f0047c45862504f9db3b235
+  - enabled: 1
+    path: Assets/Scenes/Respawn.unity
     guid: 9940e6d59ff538c4a8d86790053bf297
   - enabled: 1
     path: Assets/Scenes/Menus/PauseMenu.unity

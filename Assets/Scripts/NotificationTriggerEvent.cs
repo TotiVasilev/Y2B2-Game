@@ -48,8 +48,10 @@ public class NotificationTriggerEvent : MonoBehaviour
         objectCollider.enabled = false;
         notificationAnim.Play("NotificationFadeOut");
         notificationTextUI.text = notificationMessage;
+        if (exclamationmark != null)
+        {
         characterIconUI.sprite = exclamationmark;
-
+        }
         yield return new WaitForSeconds(disableTimer);
         RemoveNotification();       
     }

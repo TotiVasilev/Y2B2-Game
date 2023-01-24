@@ -15,7 +15,7 @@ public class GameOverScreen : MonoBehaviour
 
     
     {
-        SceneManager.LoadScene("New Prototype");
+        SceneManager.LoadScene("Respawn");
 
     }
 
